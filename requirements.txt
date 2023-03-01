@@ -2,3 +2,6 @@ transformers
 torch
 gtts
 streamlit
+pytest
+pylint
+black

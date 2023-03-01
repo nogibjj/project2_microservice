@@ -1,12 +1,14 @@
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip3 install --upgrade pip &&\
+		pip3 install -r requirements.txt
 
 format:
 	black *.py
 
 run:
-	streamlit run app.py --server.enableCORS=false
+	
+	streamlit run /workspaces/project2_microservice/app.py  --server.enableCORS=false
+
 
 test:
 	python -m pytest -vv test_*.py

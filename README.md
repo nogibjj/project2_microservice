@@ -25,7 +25,7 @@ The project aims to build a Microservice that is able to take input (text) and r
 
 # Deployed domain 
 * make sure you are using virtual environment to run the commands `make run`
-* Access the web app via `https://huggingface.co/spaces/Emmawang/audio_summarizer`
+* Access the web app via [link!])(https://huggingface.co/spaces/Emmawang/audio_summarizer)
 
 <img width="790" alt="Screen Shot 2023-03-01 at 12 47 21 PM" src="https://user-images.githubusercontent.com/112578755/222220573-730349d9-1e6e-44fa-993c-6e99ca925533.png">
 

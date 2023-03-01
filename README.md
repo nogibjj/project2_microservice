@@ -29,8 +29,8 @@ The project aims to build a Microservice that is able to take input (text) and r
 
 <img width="790" alt="Screen Shot 2023-03-01 at 12 47 21 PM" src="https://user-images.githubusercontent.com/112578755/222220573-730349d9-1e6e-44fa-993c-6e99ca925533.png">
 
-# Example Output
+# Example Output on HuggingFace Space
 
-<img width="763" alt="text_summary" src="https:/<img width="748" alt="audio_summary" src="https://user-images.githubusercontent.com/112578755/222221463-77dc25c9-c450-405a-a42b-0c45dc3fd86c.png">
-/user-images.githubusercontent.com/112578755/222221433-d2f9efd2-c0c9-433f-9d07-9617c42bffdb.png">
+<img width="748" alt="audio_summary" src="https://user-images.githubusercontent.com/112578755/222221581-1c401454-aaa4-4ce7-bd12-e1a52a04c89a.png">
 
+<img width="763" alt="text_summary" src="https://user-images.githubusercontent.com/112578755/222221601-e8c3b500-65d5-49a9-8142-b670ec9cb5a9.png">

@@ -1,8 +1,15 @@
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
-	#conda env create -f environment.yml
-	#conda activate hf
-	##had to do this as well
-	#conda install pytorch torchvision -c pytorch
-	#conda install -c conda-forge pyarrow
+
+format:
+	black *.py
+
+run:
+	streamlit run app.py --server.enableCORS=false
+
+test:
+	python -m pytest -vv test_*.py
+
+
+all: install format test run

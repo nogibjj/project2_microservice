@@ -13,13 +13,14 @@ def search(query):
 
     # Parse the JSON response and extract podcast data
     results = response.json()["results"]
-    for result in results:
-        print(f"Podcast Name: {result['collectionName']}")
-        print(f"Podcast Author: {result['artistName']}")
-        print(f"Podcast URL: {result['collectionViewUrl']}")
-        print(f"Podcast Feed URL: {result['feedUrl']}")
-    
-        return result["feedUrl"]
+    print(results)
+    # for result in results:
+
+    #     print(f"Podcast Name: {result['collectionName']}")
+    #     print(f"Podcast Author: {result['artistName']}")
+    #     print(f"Podcast URL: {result['collectionViewUrl']}")
+    #     # get some episodes from the URL
+    #     print(f"Podcast Feed URL: {result['feedUrl']}")
 
 
     # # Download the podcast episode from the channel based on date in mp4 format
@@ -30,4 +31,4 @@ def search(query):
     #             file.write(chunk.content)
 
 if __name__ == "__main__":
-    search(query = "morning-taiwan-glocal-news")
+    search(query = "reset-with-liz-tran")

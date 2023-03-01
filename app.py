@@ -1,30 +1,38 @@
-from fastapi import FastAPI
-from podcast_api import search
-import uvicorn
+import gradio as gr
 from transformers import pipeline
+from gtts import gTTS
 
-app = FastAPI()
+def audio(text):
+    # Summarize the input text using the Hugging Face model
+    # Load the pre-trained summarization model from Hugging Face
+    summarizer =  pipeline("summarization", model="facebook/bart-large-cnn")
+    summary = summarizer(text, do_sample=False)[0]["summary_text"]
+    # Convert the summary to audio using Google Text-to-Speech
+    tts = gTTS(summary)
+    tts.save("summary.mp3")
+    return "summary.mp3"
 
-# @app.get("/")
-# async def root():
-#     return {"message": "what podcast do you want to listen?"}
+def text_summary(text):
+    # Summarize the input text using the Hugging Face model
+    # Load the pre-trained summarization model from Hugging Face
+    summarizer =  pipeline("summarization", model="facebook/bart-large-cnn")
+    summary = summarizer(text, do_sample=False)[0]["summary_text"]
+    return summary
 
-# @app.get("/podcast/{query}")
-# async def podcast(query: str):
-#     return search(query)
+# using streamlit to create a web app to display the summary or play the audio
 
-# if __name__ == '__main__':
-#     uvicorn.run(app, port=8080, host='0.0.0.0')
+import streamlit as st
 
-@app.get("/")
-async def root():
-    return {"message": "lets summarize some text"}
+st.title("📌 Your Personal Audio Summary")
+text = st.text_input("Enter text to summarize")
 
-@app.get("/summarize/{text}")
-async def summarize(text: str):
-    summarizer = pipeline("sshleifer/distilbart-cnn-12-6")
-    summary = summarizer(text, max_length=100, min_length=30, do_sample=False)
-    return summary[0]['summary_text']
+#choose between text summary or audio summary
+option = st.selectbox("Choose between text summary  or audio summary", ("📃Text Summary", "🗣Audio Summary"))
 
-if __name__ == '__main__':
-    uvicorn.run(app, port=8080, host='0.0.0.0')
+if st.button("Summarize"):
+    if option == "📃Text Summary":
+        summary = text_summary(text)
+        st.write(summary)
+    if option == "🗣Audio Summary":
+        file_path = audio(text)
+        st.audio(file_path)

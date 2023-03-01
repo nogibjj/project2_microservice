@@ -24,12 +24,13 @@ The project aims to build a Microservice that is able to take input (text) and r
 4. Continous Integration was enabled via Github Actions.
 
 # Deployed domain 
-* make sure you are using virtual environment to run the commands
-* `make run`
+* make sure you are using virtual environment to run the commands `make run`
 * Access the web app via `http://20.124.177.144:8501 `or `https://huggingface.co/spaces/Emmawang/audio_summarizer`
-* 
+
 <img width="790" alt="Screen Shot 2023-03-01 at 12 47 21 PM" src="https://user-images.githubusercontent.com/112578755/222220573-730349d9-1e6e-44fa-993c-6e99ca925533.png">
 
 # Example Output
 
-<img width="1003" alt="Screen Shot 2023-03-01 at 11 34 46 AM" src="https://user-images.githubusercontent.com/112578755/222203131-7e338da7-05d9-4c90-9ad6-e2e619150e1e.png">
+<img width="763" alt="text_summary" src="https:/<img width="748" alt="audio_summary" src="https://user-images.githubusercontent.com/112578755/222221463-77dc25c9-c450-405a-a42b-0c45dc3fd86c.png">
+/user-images.githubusercontent.com/112578755/222221433-d2f9efd2-c0c9-433f-9d07-9617c42bffdb.png">
+

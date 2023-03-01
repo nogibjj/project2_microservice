@@ -1,4 +1,4 @@
-import gradio as gr
+import streamlit as st
 from transformers import pipeline
 from gtts import gTTS
 
@@ -20,8 +20,6 @@ def text_summary(text):
     return summary
 
 # using streamlit to create a web app to display the summary or play the audio
-
-import streamlit as st
 
 st.title("📌 Your Personal Audio Summary")
 text = st.text_input("Enter text to summarize")

@@ -2,9 +2,6 @@
 
 [![Python application test with Github Actions](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml)
 
-## Project Workflow diagram
-![project_diagram]
-
 # Containerized Audio Summary App
 
 * Connect your EC2 and github repo by using SSH keys

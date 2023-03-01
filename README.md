@@ -1,13 +1,19 @@
 # Project2: Audio Summarizer via Streamlit, AWS EC2, HuggingFace Space
 
-[![Python application test with Github Actions](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml) !
+[![Python application test with Github Actions](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml)
 
 ## Project Workflow diagram
 ![project_diagram]
 
 # Containerized Audio Summary App
 
-![EC2] <img width="1003" alt="Screen Shot 2023-03-01 at 11 49 57 AM" src="https://user-images.githubusercontent.com/112578755/222207026-5c46a35c-5e3d-495a-91de-eae2f6191344.png">
+* Connect your EC2 and github repo by using SSH keys
+* Add your security group rule with port 8501 8502
+* use the external link to access the web app
+
+<img width="1003" alt="Screen Shot 2023-03-01 at 11 49 57 AM" src="https://user-images.githubusercontent.com/112578755/222207026-5c46a35c-5e3d-495a-91de-eae2f6191344.png">
+
+(Due to EC2 costs, the instance has been stopped and the project would use free version of HuggingFace Space to deploy the web app instead.)
 
 
 # Project purpose:

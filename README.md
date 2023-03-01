@@ -3,11 +3,11 @@
 [![Python application test with Github Actions](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/fastapi_news/actions/workflows/main.yml) !
 
 ## Project Workflow diagram
-![project4_diagram](https://user-images.githubusercontent.com/112578755/204114921-dd0ffe8f-923a-4749-b7fd-313f9efc369b.jpg)
+![project_diagram]
 
 # Containerized Audio Summary App
 
-`docker build .`
+![EC2] <img width="1003" alt="Screen Shot 2023-03-01 at 11 49 57 AM" src="https://user-images.githubusercontent.com/112578755/222207026-5c46a35c-5e3d-495a-91de-eae2f6191344.png">
 
 
 # Project purpose:
